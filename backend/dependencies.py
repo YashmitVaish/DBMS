@@ -4,8 +4,8 @@ import asyncpg
 from fastapi import Depends, HTTPException, Request
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
-import backend.db as db
-from backend.security import decode_token
+import db as db
+from security import decode_token
 
 bearer_scheme = HTTPBearer(auto_error=False)
 

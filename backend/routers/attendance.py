@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 
-from backend.dependencies import get_conn_authed, release_conn, require_roles
-from backend.schemas import AttendanceBulkRequest, AttendanceMarkRequest, AttendanceUpdateRequest
+from dependencies import get_conn_authed, release_conn, require_roles
+from schemas import AttendanceBulkRequest, AttendanceMarkRequest, AttendanceUpdateRequest
 
 router = APIRouter(prefix="/attendance", tags=["attendance"])
 

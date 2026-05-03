@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.config import settings
-from backend.db import init_pool, close_pool
-from backend.routers import auth, users, courses, attendance, reports, admin
+from config import settings
+from db import init_pool, close_pool
+from routers import auth, users, courses, attendance, reports, admin
 
 
 app = FastAPI(title="Attendance Management System API")

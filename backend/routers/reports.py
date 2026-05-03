@@ -2,7 +2,7 @@ from datetime import date as date_type
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 
-from backend.dependencies import get_conn_authed, release_conn, require_roles
+from dependencies import get_conn_authed, release_conn, require_roles
 
 router = APIRouter(prefix="/reports", tags=["reports"])
 

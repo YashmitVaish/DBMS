@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 
-from backend.dependencies import get_conn_authed, release_conn, require_roles
-from backend.schemas import UserCreate, UserOut
-from backend.security import hash_password
+from dependencies import get_conn_authed, release_conn, require_roles
+from schemas import UserCreate, UserOut
+from security import hash_password
 
 router = APIRouter(prefix="/users", tags=["users"])
 

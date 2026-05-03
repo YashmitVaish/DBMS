@@ -1,6 +1,6 @@
 import asyncpg
 
-from backend.config import settings
+from config import settings
 
 pool: asyncpg.Pool | None = None
 

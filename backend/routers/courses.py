@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 
-from backend.dependencies import get_conn_authed, release_conn, require_roles
-from backend.schemas import CourseCreate, CourseOut
+from dependencies import get_conn_authed, release_conn, require_roles
+from schemas import CourseCreate, CourseOut
 
 router = APIRouter(prefix="/courses", tags=["courses"])
 
