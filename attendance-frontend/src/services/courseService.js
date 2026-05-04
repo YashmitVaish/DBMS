@@ -2,7 +2,7 @@ import api from './api'
 
 export const courseService = {
   listCourses: async () => {
-    const { data } = await api.get('/courses')
+    const { data } = await api.get('/courses/')
     return data
   },
   createCourse: async (payload) => {

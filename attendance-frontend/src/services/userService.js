@@ -2,7 +2,7 @@ import api from './api'
 
 export const userService = {
   listUsers: async () => {
-    const { data } = await api.get('/users')
+    const { data } = await api.get('/users/')
     return data
   },
   createUser: async (payload) => {

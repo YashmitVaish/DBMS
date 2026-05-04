@@ -15,7 +15,7 @@ async def me(current_user=Depends(require_roles(["student", "teacher", "admin", 
 @router.get("/", response_model=list[UserOut])
 async def list_users(
     conn=Depends(get_conn_authed),
-    _admin=Depends(require_roles(["admin"]))
+    _admin=Depends(require_roles(["admin","teacher","dept_head"]))
 ):
     try:
         rows = await conn.fetch(
